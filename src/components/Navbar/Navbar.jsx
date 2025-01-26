@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import {useState} from "react";
 import styles from "./Navbar.module.css";
 import {getImageUrl} from "../../utils.js";
 
@@ -13,7 +13,7 @@ export const Navbar = () =>{
                      src={menuOpen
                          ? getImageUrl("nav/closeIcon.png")
                          : getImageUrl("nav/menuIcon.png")}
-                     alt="hamburger menu" onClick={() => setMenuOpen(!menuOpen)}v/>
+                     alt="hamburger menu" onClick={() => setMenuOpen(!menuOpen)}/>
 
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
                     onClick={() => setMenuOpen(!menuOpen)}>
