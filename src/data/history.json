@@ -1,0 +1,17 @@
+[{
+  "role": "BUT informatique",
+  "organisation": "IUT from Bayonne and pays Basque",
+  "startDate": "Sep, 2022",
+  "endDate": "Ongoing",
+  "experiences": ["Ongoing training lasting 3 years","project management","web development","databases..."],
+  "imagesrc": "history/iut.png"
+},
+  {
+    "role": "Web Internship",
+    "organisation": "iQspot",
+    "startDate": "Mai, 2024",
+    "endDate": "July, 2024",
+    "experiences": ["learn & use Scala language","Project Management"],
+    "imagesrc": "history/iqspot.png"
+  }
+]
