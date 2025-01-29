@@ -10,7 +10,6 @@ Bienvenue sur mon portfolio de développeur web ! Ce projet présente mon travai
 ## 🎯 Fonctionnalités principales  
 
 ✅ **Design épuré et responsive** - Adapté à tous les écrans  
-✅ **Navigation fluide avec React Router** - Expérience utilisateur optimisée  
 ✅ **Composants réutilisables** - Code organisé et structuré  
 ✅ **Section Projets (à venir)** - Présentation détaillée de mes réalisations  
 
