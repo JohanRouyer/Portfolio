@@ -3,7 +3,7 @@
   "imageSrc": "projects/portfolio.png",
   "description": "my web developer portfolio! This project presents my work, my skills and allows you to find out more about my background.",
   "skills": ["React","CSS","Node"],
-  "demo": "https://portfolio-rouyer.netlify.app/",
+  "demo": "https://portfolio-rouyer-johan.netlify.app/",
   "source": "https://github.com/JohanRouyer/Portfolio"
 },
   {
