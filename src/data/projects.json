@@ -1,0 +1,16 @@
+[{
+  "title": "Portfolio",
+  "imageSrc": "projects/portfolio.png",
+  "description": "my web developer portfolio! This project presents my work, my skills and allows you to find out more about my background.",
+  "skills": ["React","CSS","Node"],
+  "demo": "",
+  "source": "https://github.com/JohanRouyer/Portfolio"
+},
+  {
+    "title": "Don't Forget Me",
+    "imageSrc": "projects/dfm.png",
+    "description": "Dont Forget Me is a comprehensive appointment management solution, featuring a responsive web application for professionals to handle bookings and client data, alongside a Raspberry Pi setup that automatically sends email or SMS reminders, reducing no-shows and streamlining operations.",
+    "skills": ["Laravel","Python"],
+    "demo": "",
+    "source": "https://github.com/JohanRouyer/DontForgetMe"
+  }]
