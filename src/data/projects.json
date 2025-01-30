@@ -9,7 +9,7 @@
   {
     "title": "Don't Forget Me",
     "imageSrc": "projects/dfm.png",
-    "description": "Dont Forget Me is a comprehensive appointment management solution, aim to handle bookings and client data, alongside a Raspberry Pi setup that automatically sends email or SMS reminders, reducing no-shows and streamlining operations.",
+    "description": "Dont Forget Me is a appointment management solution to handle bookings, alongside a Raspberry Pi sends email or SMS reminders to reducing no-shows.",
     "skills": ["Laravel","Python"],
     "demo": "",
     "source": "https://github.com/JohanRouyer/DontForgetMe"
