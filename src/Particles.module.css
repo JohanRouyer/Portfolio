@@ -1,0 +1,25 @@
+.particleContainer {
+    position: fixed; /* Fixe l'élément au fond */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Prend toute la largeur de la fenêtre */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    pointer-events: none; /* Les particules ne bloquent pas les interactions avec le reste de la page */
+    z-index: -1;  /* Envoie les particules en arrière-plan */
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); opacity: 0.6; }
+    50% { transform: translateY(-15px); opacity: 0.4; }
+    100% { transform: translateY(0px); opacity: 0.6; }
+}

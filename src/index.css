@@ -9,5 +9,5 @@
 html{
     scroll-behavior: smooth;
     min-height: 100dvh;
-    background-color: theme(var(--color-background));
+    background: var(--color-background);
 }

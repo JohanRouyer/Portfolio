@@ -58,4 +58,10 @@
     border-radius: 100px;
     background: var(--color-background);
     padding: 1px 22px;
+    transition: background 0.5s ease;
+}
+
+.link:hover {
+    background:
+    rgba(222, 117, 226, 0.56);
 }

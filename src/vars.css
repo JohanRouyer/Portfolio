@@ -4,7 +4,9 @@
     --color-primary:#19376D;
     --color-secondary:#2F4596;
     --color-dark:#0B2447;
-    --color-background: #576CBC;
+    --color-background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 10%, transparent 80%),
+    linear-gradient(135deg, rgb(88, 106, 171) 0%, rgb(50, 70, 150) 100%);
+
 
     /*fonts*/
     --font-roboto: "Roboto", sans-serif;
