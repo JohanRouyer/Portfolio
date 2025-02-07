@@ -186,6 +186,11 @@
         gap: 34px;
     }
 
+    .skillImageContainer{
+        width: 90px;
+        height: 90px;
+    }
+
     .skills {
         width: 100%;
         flex-direction: row;
