@@ -1,90 +1,167 @@
 @import "../.././vars.css";
 
-.container{
+.container {
     color: var(--color-text);
     margin-top: 79px;
     margin-right: 10%;
     margin-left: 10%;
 }
-.title{
+
+.title {
     color: var(--color-text);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 14px;
 }
 
-.skills{
+.skills {
     width: 45%;
     display: flex;
     flex-wrap: wrap;
     gap: 37px;
 }
 
-.skill{
+/* ------------------------------------------------
+   Style pour les cartes de compétence (glassmorphism + tilt)
+-------------------------------------------------- */
+.skill {
+    position: relative; /* Pour positionner le pseudo-élément d'éclairage */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 11px;
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.22, 1),
+    box-shadow 0.5s ease;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.skillImageContainer{
-    background-color: var(--color-secondary);
-    border-radius: 100%;
+.skill::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.skill:hover::before {
+    opacity: 1;
+}
+
+.skill:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur de l'image avec dégradé moderne */
+.skillImageContainer {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    padding: 5px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
-}
-.skillImageContainer img{
-    width: 75px;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.skill p{
+.skill:hover .skillImageContainer {
+    transform: scale(1.1);
+}
+
+.skillImageContainer img {
+    border-radius: 15%;
+    width: 60%;
+    height: auto;
+}
+
+.skill p {
+    margin-top: 10px;
     font-size: 25px;
     font-family: var(--font-roboto);
     font-weight: 500;
 }
 
-.history{
+.history {
     width: 45%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.historyItem{
+.historyItem {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 24px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 17px;
-    background: #19376D;
-    background: linear-gradient(90deg, #19376D 0%,rgba(25,55,109,0)100%);
-    border-radius: 10px;
-    padding: 24px;
+    transition: transform 0.5s cubic-bezier(0.2, 1, 0.22, 1), box-shadow 0.5s ease;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 17px;
 }
 
-.historyItem img{
+.historyItem::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.historyItem:hover::before {
+    opacity: 1;
+}
+
+.historyItem:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.historyItem img {
     width: 75px;
     margin-right: 10px;
 }
 
-.historyItemDetails{
+.historyItemDetails {
     font-family: var(--font-roboto);
 }
-.historyItemDetails h3{
+
+.historyItemDetails h3 {
     font-size: 30px;
-    font-weight: 500;
     font-weight: bold;
 }
-.historyItemDetails p{
+
+.historyItemDetails p {
     margin-top: 6px;
     margin-left: 20px;
     font-size: 20px;
@@ -92,28 +169,30 @@
     font-style: italic;
 }
 
-.historyItemDetails ul{
+.historyItemDetails ul {
     margin-top: 6px;
     list-style-position: inside;
     font-size: 25px;
     list-style-type: disc;
 }
 
-
+/* ------------------------------------------------
+   Responsive
+-------------------------------------------------- */
 @media screen and (max-width: 830px) {
-    .content{
+    .content {
         flex-direction: column;
         align-items: center;
         gap: 34px;
     }
 
-    .skills{
+    .skills {
         width: 100%;
         flex-direction: row;
         justify-content: center;
     }
 
-    .history{
+    .history {
         width: 100%;
         gap: 9px;
     }
