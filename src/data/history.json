@@ -13,5 +13,13 @@
     "endDate": "July, 2024",
     "experiences": ["learn & use Scala language","Project Management"],
     "imagesrc": "history/iqspot.png"
+  },
+  {
+    "role": "IT development",
+    "organisation": "Prince of Songkla University",
+    "startDate": "August, 2023",
+    "endDate": "Mai, 2023",
+    "experiences": ["Exchange student(Phuket, Thaïlande)","International program in English based on IT development"],
+    "imagesrc": "history/PSU.svg"
   }
 ]
